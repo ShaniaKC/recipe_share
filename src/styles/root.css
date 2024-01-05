@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	--navbar-height: 57px;
+	--sidebar-width: 254px;
+	--sidebar-width-negative: -254px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.sidebar > * {
+	padding: 1rem;
+}
+
+.sidebar details {
+	border-bottom: 1px solid #e5e7eb;
+}
+.sidebar details summary {
+	display: flex;
+	margin-bottom: 0.5rem;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+}
+
+.sidebar details[open] summary svg {
+	transform: rotate(180deg);
+}
