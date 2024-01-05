@@ -6,7 +6,7 @@ Link to Demo :
 
 ### Recipe Sharing Platform
 
-#### Frontend (React + TypeScript):
+#### Frontend (React + TailwindCSS):
 
 #### Key Features:
 
