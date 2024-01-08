@@ -14,11 +14,11 @@ const RecipeCard = ({ recipe }) => {
 	return (
 		<>
 			<div key={recipe.id} className="py-3 px-5 border rounded grid gap-3 items-start hover:bg-zinc-100/30 ">
-				<a href={`/main/recipe_detail/${recipe.id}`}>
+				<Link to={`/main/recipe_detail/${recipe.id}`}>
 					<Text variant="h5" className="sm:h-7 text-ellipsis overflow-hidden hover:text-orange-300 cursor-pointer">
 						{recipe.title}
 					</Text>
-				</a>
+				</Link>
 				<div className="h-auto w-full overflow-hidden">
 					<img
 						src={recipe.image}
